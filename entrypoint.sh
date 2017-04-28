@@ -27,4 +27,4 @@ __create_rundir
 __create_hostkeys
 __create_user
 
-exec /usr/bin/sshd -D
+exec /usr/sbin/sshd -D
