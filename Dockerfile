@@ -3,7 +3,7 @@ MAINTAINER Amar Sood <mail@tekacs.com>
 
 EXPOSE 22
 
-RUN dnf -y update && dnf -y install openssh-server passwd && dnf clean all
+RUN dnf -y update && dnf -y install openssh-server passwd docker && dnf clean all
 
 COPY entrypoint.sh /
 COPY boot.sh /
