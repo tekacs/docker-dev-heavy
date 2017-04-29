@@ -36,6 +36,6 @@ __create_rundir
 __create_hostkeys
 __create_user
 
-rm /run/nologin
+rm -f /run/nologin
 
 exec /usr/sbin/sshd -D
