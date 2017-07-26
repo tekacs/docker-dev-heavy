@@ -4,7 +4,7 @@ MAINTAINER Amar Sood <mail@tekacs.com>
 EXPOSE 22
 
 RUN dnf -y update && \
-	dnf -y install --allowerasing openssh-server passwd docker fish sudo dtach tmux hostname @c-development @development-tools \
+	dnf -y install --allowerasing openssh-server passwd docker xonsh sudo dtach tmux hostname @c-development @development-tools \
 	&& dnf clean all
 
 ENV TINI_VERSION v0.14.0

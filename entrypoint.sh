@@ -11,7 +11,7 @@ mkdir -p /var/run/sshd
 __create_user() {
 # Create a user to SSH into as.
 groupadd docker
-useradd -m -s /usr/bin/fish -G wheel,docker $SSH_USERNAME
+useradd -m -s /usr/bin/xonsh -G wheel,docker $SSH_USERNAME
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
 
 echo -e "$SSH_USERPASS\n$SSH_USERPASS" | (passwd --stdin $SSH_USERNAME)
